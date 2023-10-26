@@ -1,0 +1,19 @@
+{
+  "name": "cypress-final-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:test": "cypress run -arge tests",
+    "cypress:run": "cypress run --e2e --browser chrome",
+    "cypress:run:all": "cypress run --e2e --browser chrome --spec cypress/e2e/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "cypress": "^13.3.3"
+  }
+}
