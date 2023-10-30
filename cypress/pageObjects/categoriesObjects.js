@@ -9,7 +9,7 @@ export default class CategoriesObjects{
     }
 
     clickDressSubCategory(){
-        cy.get("[class='panel-body']").contains('Dress').click()
+        cy.get("[class='panel-body']").contains('Dress').debug().click({force:true})
     }
 
     verifyCategoryPage(a){
@@ -27,6 +27,6 @@ export default class CategoriesObjects{
     }
 
     clickJeansSubCategory(){
-        cy.get("[class='panel-body']").contains('Jeans ').click()
+        cy.get("[class='panel-body']").contains('Jeans ').click({force:true})
     }
 }
